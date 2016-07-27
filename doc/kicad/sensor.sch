@@ -1,0 +1,252 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:AMS1117
+LIBS:dht11
+LIBS:sensor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L USB_A P1
+U 1 1 57928602
+P 6000 3000
+F 0 "P1" H 6200 2800 50  0000 C CNN
+F 1 "USB_A" H 5950 3200 50  0000 C CNN
+F 2 "Connect:USB_A" V 5950 2900 50  0001 C CNN
+F 3 "" V 5950 2900 50  0000 C CNN
+	1    6000 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L ESP-01v090 U2
+U 1 1 57928748
+P 7400 5250
+F 0 "U2" H 7400 5150 50  0000 C CNN
+F 1 "ESP-01v090" H 7400 5350 50  0000 C CNN
+F 2 "esp8266:ESP-01" H 7400 5250 50  0001 C CNN
+F 3 "" H 7400 5250 50  0001 C CNN
+	1    7400 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L AMS1117 U1
+U 1 1 579287F1
+P 7400 3200
+F 0 "U1" H 7400 3100 50  0000 C CNN
+F 1 "AMS1117" H 7400 3300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 7400 3200 60  0001 C CNN
+F 3 "" H 7400 3200 60  0000 C CNN
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L DHT11 U3
+U 1 1 5792889F
+P 10150 3050
+F 0 "U3" H 9800 3550 60  0000 C CNN
+F 1 "DHT11" H 10350 3550 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 10150 3050 60  0001 C CNN
+F 3 "" H 10150 3050 60  0000 C CNN
+	1    10150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5792910D
+P 9450 3600
+F 0 "C1" H 9475 3700 50  0000 L CNN
+F 1 "100nF" H 9475 3500 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 9488 3450 50  0001 C CNN
+F 3 "" H 9450 3600 50  0000 C CNN
+	1    9450 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 57929199
+P 9900 3900
+F 0 "R1" V 9980 3900 50  0000 C CNN
+F 1 "4,7 KΩ" V 9800 3900 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Cement_Horizontal_Meggitt-SBC-2" V 9830 3900 50  0001 C CNN
+F 3 "" H 9900 3900 50  0000 C CNN
+	1    9900 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57929ECA
+P 7400 3700
+F 0 "#PWR01" H 7400 3450 50  0001 C CNN
+F 1 "GND" H 7400 3550 50  0000 C CNN
+F 2 "" H 7400 3700 50  0000 C CNN
+F 3 "" H 7400 3700 50  0000 C CNN
+	1    7400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 57929EF0
+P 8350 5100
+F 0 "#PWR02" H 8350 4850 50  0001 C CNN
+F 1 "GND" H 8350 4950 50  0000 C CNN
+F 2 "" H 8350 5100 50  0000 C CNN
+F 3 "" H 8350 5100 50  0000 C CNN
+	1    8350 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 57929F16
+P 10450 3600
+F 0 "#PWR03" H 10450 3350 50  0001 C CNN
+F 1 "GND" H 10450 3450 50  0000 C CNN
+F 2 "" H 10450 3600 50  0000 C CNN
+F 3 "" H 10450 3600 50  0000 C CNN
+	1    10450 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 57929F3C
+P 6300 2900
+F 0 "#PWR04" H 6300 2650 50  0001 C CNN
+F 1 "GND" H 6300 2750 50  0000 C CNN
+F 2 "" H 6300 2900 50  0000 C CNN
+F 3 "" H 6300 2900 50  0000 C CNN
+	1    6300 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5792ACBE
+P 9300 3600
+F 0 "#PWR05" H 9300 3350 50  0001 C CNN
+F 1 "GND" H 9300 3450 50  0000 C CNN
+F 2 "" H 9300 3600 50  0000 C CNN
+F 3 "" H 9300 3600 50  0000 C CNN
+	1    9300 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 5200 6450 5400
+Connection ~ 6450 5300
+Connection ~ 6450 5200
+Connection ~ 6450 5400
+Connection ~ 9750 3600
+Text Label 8500 5300 0    60   ~ 0
+GPIO0
+Wire Wire Line
+	8350 5300 8750 5300
+Text Label 10050 4300 1    60   ~ 0
+GPIO0
+Wire Wire Line
+	10050 3600 10050 4300
+Text Label 8200 3200 0    60   ~ 0
+Vout
+Wire Wire Line
+	6450 5400 6000 5400
+Text Label 6000 5400 0    60   ~ 0
+Vout
+Text Label 9750 4300 1    60   ~ 0
+Vout
+NoConn ~ 10250 3600
+NoConn ~ 8350 5200
+NoConn ~ 8350 5400
+NoConn ~ 6450 5100
+NoConn ~ 6300 3000
+NoConn ~ 6300 3100
+NoConn ~ 5900 2700
+Wire Wire Line
+	6300 3200 6600 3200
+$Comp
+L PWR_FLAG #FLG06
+U 1 1 57930C79
+P 6300 3200
+F 0 "#FLG06" H 6300 3295 50  0001 C CNN
+F 1 "PWR_FLAG" H 6300 3380 50  0000 C CNN
+F 2 "" H 6300 3200 50  0000 C CNN
+F 3 "" H 6300 3200 50  0000 C CNN
+	1    6300 3200
+	-1   0    0    1   
+$EndComp
+Connection ~ 6300 3200
+$Comp
+L PWR_FLAG #FLG07
+U 1 1 57931007
+P 6450 5400
+F 0 "#FLG07" H 6450 5495 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 5580 50  0000 C CNN
+F 2 "" H 6450 5400 50  0000 C CNN
+F 3 "" H 6450 5400 50  0000 C CNN
+	1    6450 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 57932435
+P 9900 5000
+F 0 "#PWR08" H 9900 4750 50  0001 C CNN
+F 1 "GND" H 9900 4850 50  0000 C CNN
+F 2 "" H 9900 5000 50  0000 C CNN
+F 3 "" H 9900 5000 50  0000 C CNN
+	1    9900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG09
+U 1 1 5793245B
+P 9900 5000
+F 0 "#FLG09" H 9900 5095 50  0001 C CNN
+F 1 "PWR_FLAG" H 9900 5180 50  0000 C CNN
+F 2 "" H 9900 5000 50  0000 C CNN
+F 3 "" H 9900 5000 50  0000 C CNN
+	1    9900 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 3900
+Wire Wire Line
+	9750 3600 9750 4300
+Connection ~ 9750 3900
+Wire Wire Line
+	9600 3600 9850 3600
+$EndSCHEMATC
